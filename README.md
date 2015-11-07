@@ -6,6 +6,9 @@ A idéia é ser possível entender a estrutura básica da aplicação bem como s
 
 ## Tecnologias utilizadas
 
+Para ambiente de desenvolvimento:
+* [Docker](https://www.docker.com/)
+
 Para [PHP](http://php.net):
 * [PhalconPHP](http://phalconphp.com)
 * [PHPUnit](https://phpunit.de)
