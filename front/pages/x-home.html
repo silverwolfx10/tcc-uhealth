@@ -1,0 +1,76 @@
+<div class="home_img_background_<%= random %>">
+    <% if(/one/.test(step)) { %>
+        <div class="home_step_one home_steps">
+            <p class="home_step_title">Os melhores personais da sua região em um só clique.</p>
+
+            <div class="home_wrap_form">
+                <div class="row_home">
+                    <input type="text" class="input_text_big" id="cep_home" placeholder="Digite aqui seu CEP"/>
+                </div>
+                <div class="row_home">
+                    <button class="button_search button_search_home_action">
+                        Buscar Personais
+                    </button>
+                </div>
+            </div>
+            <p class="home_step_subtitle"> Não sabe seu <b>CEP</b> ? <a href="#" class="home_step_link">Clique aqui</a></p>
+        </div>
+    <% } %>
+
+    <% if(/two/.test(step)) { %>
+        <div class="home_step_two home_steps">
+            <p class="home_step_title">Informe o endereço para encontrar os personais mais próximos ;)</p>
+
+            <div class="home_wrap_form">
+                <div class="row_home">
+                    <div class="home_cell_uf">
+                        <x-select
+                                id="home_state"
+                                classType="select_big"
+                                select="<%= uf %>"
+                                value="state"
+                                label="state"
+                                >
+
+                        </x-select>
+                    </div>
+                    <div class="home_cell_city">
+                        <x-select
+                                id="home_city"
+                                classType="select_big"
+                                select="<%= city %>"
+                                value="id"
+                                label="nmCity"
+                                >
+
+                        </x-select>
+                    </div>
+                </div>
+
+                <div class="row_home">
+                    <div class="home_cell_address">
+                       <input type="text" class="input_text_big" placeholder="Endereço" value="<%= address %>" />
+                    </div>
+                    <div class="home_cell_number">
+                        <input type="text" class="input_text_big" id="home_number" placeholder="Número" />
+                    </div>
+                </div>
+
+                <div class="row_home">
+                    <div class="home_cell_back">
+                        <button class="button_back_big button_back_home_action">
+                            Voltar
+                        </button>
+                    </div>
+                    <div class="home_cell_search">
+                        <button class="button_search button_search_personals_home_action">
+                            Encontrar Personais próximos
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    <% } %>
+
+</div>

@@ -1,0 +1,56 @@
+* {
+	border: 0;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	outline: none;
+	&:focus {
+		outline: none;
+	}
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+    background-color: #f2f2f2;
+	font: {
+		family: $font-family;
+		size: 16px;
+	}
+  color: $color_gray_ligth;
+}
+
+ul, li {
+	list-style: none;
+}
+a {
+  color: $color_gray;
+  text-decoration: none;
+  font-size: 14px;
+}
+h1{
+  font-family: $font-family;
+  color: $color_gray_ligth;
+  font-weight: 500;
+}
+
+hr{
+  background: $color_gray_ultra_ligth;
+  height: 1px;
+  margin: 10px 0;
+}
+
+label{
+  font-family: $font-family;
+  color: $color_gray_ligth;
+}
+
+.hide{
+  display:none;
+}
+//
+//// Remove o padding no Firefox
+//button::-moz-focus-inner {
+//		border: 0;
+//		padding: 0;
+//	}

@@ -1,0 +1,50 @@
+<div class="container">
+    <h1>Login</h1>
+    <hr>
+    <div class="row_login">
+        <div class="login_cel">
+            <div class="row_login">
+                <label for="email"> Email: </label>
+                <input type="email" id="email" class="input_text" />
+            </div>
+            <div class="row_login">
+                <label for="password"> Senha: </label>
+                <input type="password" id="password" class="input_text" />
+            </div>
+
+            <div class="row_login">
+                <x-messages>
+                </x-messages>
+            </div>
+
+            <div class="row_login">
+                <div class="container_button">
+                    <button class="button_primary button_login_action">
+                        Entrar
+                    </button>
+                </div>
+            </div>
+            <div class="row_login_center">
+                <a href="#" class="link">Esqueci minha senha</a>
+            </div>
+
+
+        </div>
+
+        <div class="login_or">
+
+        </div>
+
+        <div class="login_cel">
+            <x-social type="login"></x-social>
+        </div>
+    </div>
+    <div class="row_login_center">
+       <p> Ainda não tem uma conta? </p>
+        <a href="/cadastro" onClick="return false;" class="link_high_ligth login_cadastro_action">Cadastre-se agora!</a>
+        <br />
+        <br />
+        <br />
+    </div>
+
+</div>
