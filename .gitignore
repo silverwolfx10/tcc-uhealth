@@ -1,0 +1,10 @@
+.DS_*
+vendor
+composer.lock
+.idea
+phpunit.phar
+_reports
+userinterface/www/public/front/*
+bower_components
+node_modules
+*local.*

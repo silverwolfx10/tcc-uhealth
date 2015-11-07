@@ -1,0 +1,19 @@
+{	
+	"name": "silverwolfx10/uhealth",
+    "description": "uHealth",
+    "require": {
+        "doctrine/orm": "~2.4",
+        "doctrine/data-fixtures": "1.1.1",
+        "phalcon/incubator": "dev-master",
+        "zendframework/zend-stdlib": "2.7.1",
+        "zendframework/zend-filter": "2.5.1",
+        "zendframework/zend-servicemanager": "2.5.1",
+        "jms/serializer": "*"
+    },
+     "authors": [
+        {
+            "name": "Leandro Menezes",
+            "email": "leandro.anjos@outlook.com"
+        }
+    ]
+}

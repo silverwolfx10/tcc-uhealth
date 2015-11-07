@@ -1,0 +1,14 @@
+{	
+	"name": "silverwolfx10/uhealth",
+    "description": "uHealth",
+    "require": {
+        "zendframework/zend-form": "2.6.0",
+        "zendframework/zend-i18n": "2.5.1"
+    },
+     "authors": [
+        {
+            "name": "Leandro Menezes",
+            "email": "leandro.anjos@outlook.com"
+        }
+    ]
+}
