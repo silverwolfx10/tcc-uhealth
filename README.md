@@ -4,8 +4,6 @@ Este repositório representa toda a estrutura basica do projeto http://www.uheal
 Não contêm o projeto completo por que será levado adiante, adicionamos aqui os pontos mais importantes ou pontos que não entregam nosso diferencial.
 A idéia é ser possível entender a estrutura básica da aplicação bem como seu funcionamento de forma superficial.
 
-=============
-
 ## Tecnologias utilizadas
 
 Para [PHP](http://php.net):
