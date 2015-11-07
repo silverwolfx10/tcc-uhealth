@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>uHealth</title>
+    <link rel="stylesheet" type="text/css" href="/front/css/uhealth.min.css">
+
+</head>	
+<body>
+    <?php echo $this->getContent(); ?>
+
+	<x-menu></x-menu>
+    <x-body></x-body>
+    <x-loading></x-loading>
+
+
+	<!-- ninja -->
+	<script src="/front/ninja.min.js"></script>
+    <script src="/front/ninja-uHealth.min.js"></script>
+
+	<!-- clear: limpando cache -->
+	<script>   
+		localStorage.clear();
+	</script>
+
+	<!-- polyfill -->
+	<script>
+		if (!document.registerElement) {
+			var script = document.createElement('script');
+					script.src = './webcomponents.min.js';
+			document.querySelector('head').appendChild(script);
+		}
+	</script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDvWbR20pVGRUUzN-t5vdiNzfObLH4jRjg&signed_in=true"></script>
+
+
+
+</body>
+</html>
