@@ -1,0 +1,18 @@
+webUhealth:
+  image: ubuntu-php5-fpm-nginx-phalcon2-gearman
+  links:
+    - mysql:mysql
+  volumes:
+     - ./nginx:/etc/nginx/sites-available
+     - ../:/var/www
+  ports:
+   - "80:80"
+  command: /start_services.sh
+
+mysql:
+  image: my-mysql
+  volumes:
+    - ./databases/mysql:/var/lib/mysql
+  ports:
+    - "3316:3306"
+

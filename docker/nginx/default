@@ -1,0 +1,74 @@
+server {
+
+    listen   80;
+    server_name www.uhealth.com.br;
+
+    index index.php index.html index.htm;
+    set $root_path '/var/www/userinterface/www/public';
+    root $root_path;
+    #auth_basic "Admin Login";
+        #auth_basic_user_file /etc/nginx/pma_pass;
+    try_files $uri $uri/ @rewrite;
+
+     access_log /var/log/nginx/www.com-access.log;
+     error_log  /var/log/nginx/www.com-error.log error;
+
+    location @rewrite {
+        #auth_basic "Admin Login";
+        #auth_basic_user_file /etc/nginx/pma_pass;
+        rewrite ^/(.*)$ /index.php?_url=/$1;
+    }
+    location ~ \.php$ {
+          fastcgi_split_path_info ^(.+\.php)(/.+)$;
+          # With php5-fpm:
+          fastcgi_pass unix:/var/run/php5-fpm.sock;
+          fastcgi_index index.php;
+          include fastcgi_params;
+          fastcgi_param HTTPS off;
+    }
+
+    location ~* ^/(css|img|js|flv|swf|download)/(.+)$ {
+        root $root_path;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+server {
+
+    listen   80;
+    server_name api.uhealth.com.br;
+
+    index index.php index.html index.htm;
+    set $root_path '/var/www/userinterface/api';
+    root $root_path;
+    #auth_basic "Admin Login";
+        #auth_basic_user_file /etc/nginx/pma_pass;
+    try_files $uri $uri/ @rewrite;
+
+     access_log /var/log/nginx/api.com-access.log;
+     error_log  /var/log/nginx/api.com-error.log error;
+
+    location @rewrite {
+        #auth_basic "Admin Login";
+        #auth_basic_user_file /etc/nginx/pma_pass;
+        rewrite ^/(.*)$ /index.php?_url=/$1;
+    }
+    location ~ \.php$ {
+           fastcgi_split_path_info ^(.+\.php)(/.+)$;
+            # With php5-fpm:
+            fastcgi_pass unix:/var/run/php5-fpm.sock;
+            fastcgi_index index.php;
+            include fastcgi_params;
+            fastcgi_param HTTPS off;
+    }
+
+    location ~* ^/(css|img|js|flv|swf|download)/(.+)$ {
+        root $root_path;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}

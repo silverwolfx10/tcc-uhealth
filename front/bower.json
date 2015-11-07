@@ -1,0 +1,51 @@
+{
+  "name": "uhealth.Ninja.JS",
+  "version": "0.0.0",
+  "authors": [
+    "Cleber de Moraes Goncalves <cleber.programmer@hotmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "keywords": [
+    "javascript"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Ninja.JS": "*",
+    "clone.Ninja.JS": "*",
+    "compose.Ninja.JS": "*",
+    "cond.Ninja.JS": "*",
+    "curry.Ninja.JS": "*",
+    "extend.Ninja.JS": "*",
+    "dispatcher.Ninja.JS": "*",
+    "every.Ninja.JS": "*",
+    "f.Ninja.JS": "*",
+    "fileRequest.Ninja.JS": "*",
+    "innerHTML.Ninja.JS": "*",
+    "merge.Ninja.JS": "*",
+    "once.Ninja.JS": "*",
+    "pick.Ninja.JS": "*",
+    "promisse.Ninja.JS": "*",
+    "prop.Ninja.JS": "*",
+    "push.Ninja.JS": "*",
+    "render.Ninja.JS": "*",
+    "restrict.Ninja.JS": "*",
+    "some.Ninja.JS": "*",
+    "storage.Ninja.JS": "*",
+    "t.Ninja.JS": "*",
+    "template.Ninja.JS": "*",
+    "uid.Ninja.JS": "*",
+    "webComponent.Ninja.JS": "*",
+    "webcomponentsjs": "~0.7.12",
+    "equal.Ninja.JS": "*",
+    "event.Ninja.JS": "*"
+  }
+}
